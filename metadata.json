@@ -1,0 +1,7 @@
+{
+  "name": "Panel NzShot",
+  "description": "Página oficial do Panel NzShot para Free Fire.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
