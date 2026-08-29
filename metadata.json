@@ -1,6 +1,6 @@
 {
-  "name": "Panel NzShot",
-  "description": "Página oficial do Panel NzShot para Free Fire.",
+  "name": "O Segredo dos Famosos",
+  "description": "Página oficial do Painel Free Fire - O Segredo dos Famosos.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
