@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="pt-BR">
     <meta name="google" content="notranslate">
-    <title>O SEGREDO DOS FAMOSOS!</title>
+    <title>VEM XITAR COM NZWSENSI 💙</title>
     <!-- Utmify Scripts (UTM Tracking & Pixel) -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -31,7 +31,9 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "xo5pi4g92t");
     </script>
-    <!-- Performance: DNS Prefetch & Preconnect for Fast Asset Loading -->
+    <!-- Performance: DNS Prefetch & Preconnect for Ultra-Fast Asset Loading -->
+    <link rel="dns-prefetch" href="https://buavjrdrxhmgewpqagaw.supabase.co">
+    <link rel="preconnect" href="https://buavjrdrxhmgewpqagaw.supabase.co" crossorigin>
     <link rel="dns-prefetch" href="https://i.ibb.co">
     <link rel="preconnect" href="https://i.ibb.co" crossorigin>
     <link rel="dns-prefetch" href="https://gmmoldes.com">
@@ -40,17 +42,22 @@
     <link rel="preconnect" href="https://player.vimeo.com">
     <link rel="dns-prefetch" href="https://i.vimeocdn.com">
     <link rel="preconnect" href="https://i.vimeocdn.com" crossorigin>
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
     <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Priority LCP Preload for Brand Logo -->
-    <link rel="preload" as="image" href="https://i.ibb.co/fdj2j9VY/MINHA-LOGO-FF.png" fetchpriority="high">
+    <!-- Priority LCP Preload for Logo only (above the fold) -->
+    <link rel="preload" as="image" href="https://i.ibb.co/j9dNHMCD/6c056905-c6b2-4a4e-b601-dd7db35ebe7d.png" fetchpriority="high">
 
-    <!-- Optimized Font Loading with display=swap -->
+    <!-- Optimized Non-Blocking Google Fonts (Eliminates Render Blocking & FCP Delay) -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap">
+    </noscript>
     <style>
         * {
             margin: 0;
@@ -216,6 +223,198 @@
                 box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px currentColor, 0 4px 14px rgba(0, 0, 0, 0.2);
             }
         }
+
+        /* PHONE 3D SPIN ENTRANCE & FLOAT TRANSITION */
+        @keyframes phone3DFlipEntrance {
+            0% {
+                opacity: 0;
+                transform: perspective(1200px) rotateY(180deg) scale(0.65) translateY(24px);
+            }
+            45% {
+                opacity: 1;
+                transform: perspective(1200px) rotateY(-22deg) scale(1.05) translateY(-6px);
+            }
+            70% {
+                transform: perspective(1200px) rotateY(9deg) scale(0.98) translateY(2px);
+            }
+            85% {
+                transform: perspective(1200px) rotateY(-3deg) scale(1.01) translateY(-1px);
+            }
+            100% {
+                opacity: 1;
+                transform: perspective(1200px) rotateY(0deg) scale(1) translateY(0px);
+            }
+        }
+
+        @keyframes floatPhone {
+            0%, 100% {
+                transform: perspective(1200px) translateY(0px) rotateY(0deg);
+            }
+            50% {
+                transform: perspective(1200px) translateY(-11px) rotateY(-2.5deg);
+            }
+        }
+
+        .phone-3d-wrap {
+            perspective: 1200px;
+            transform-style: preserve-3d;
+        }
+
+        .phone-3d-element {
+            will-change: transform, opacity;
+            opacity: 1;
+            transform: perspective(1200px) rotateY(0deg);
+        }
+
+        .phone-3d-element.phone-spin-active {
+            animation: phone3DFlipEntrance 1.6s cubic-bezier(0.2, 0.85, 0.4, 1) forwards, floatPhone 3.8s ease-in-out 1.6s infinite;
+        }
+
+        .benefit-card-hover {
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+        .benefit-card-hover:hover {
+            transform: translateY(-3px);
+            border-color: #a855f7 !important;
+            box-shadow: 0 8px 24px rgba(168, 85, 247, 0.35) !important;
+        }
+
+        /* BEFORE & AFTER (ANTES E DEPOIS COMPARATIVE BLOCK) */
+        .before-after-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            max-width: 520px;
+            margin: 0 auto;
+            align-items: start;
+        }
+        @media (max-width: 480px) {
+            .before-after-grid {
+                gap: 10px;
+            }
+        }
+        .before-after-box {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            background-color: #0c0a17;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+            transition: transform 0.28s ease, box-shadow 0.28s ease;
+        }
+        .before-after-box:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+        .before-after-media {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* TARGET AUDIENCE IMAGE ANIMATIONS & BACKGROUND MOTION (FULL WIDTH - NO BORDERS) */
+        .target-img-container-full {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-right: -20px;
+            overflow: hidden;
+            position: relative;
+            background-color: #050505;
+        }
+
+        .target-img-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        /* Ambient Floating Motion for Full Image */
+        @keyframes targetImageFloating {
+            0% {
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                transform: scale(1.035) translateY(-4px);
+            }
+            100% {
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Cinematic Breathe Motion for Full Image */
+        @keyframes targetImageBreathe {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.045);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Gamer Neon Pulse for Full Image */
+        @keyframes targetImagePulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03);
+            }
+        }
+
+        .target-motion-floating {
+            animation: targetImageFloating 6s ease-in-out infinite alternate;
+            will-change: transform;
+        }
+
+        .target-motion-breathe {
+            animation: targetImageBreathe 7.5s ease-in-out infinite alternate;
+            will-change: transform;
+        }
+
+        .target-motion-pulse {
+            animation: targetImagePulse 3.5s ease-in-out infinite;
+            will-change: transform;
+        }
+
+        .target-animated-img {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+            border-radius: 0px !important;
+            outline: none !important;
+            box-shadow: none !important;
+            object-fit: cover !important;
+            transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .target-animated-img:hover {
+            transform: scale(1.04) !important;
+        }
+
+        /* Scroll into View Dynamic Transition */
+        .target-card-reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .target-card-reveal.revealed {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
         
         /* PROMOTIONAL MARQUEE TOP BAR */
         .promo-marquee-bar {
@@ -224,7 +423,7 @@
             left: 0;
             width: 100%;
             z-index: 9999;
-            background-color: #24db39;
+            background-color: #916ef2;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(224, 0, 0, 0.3);
             overflow: hidden;
             white-space: nowrap;
@@ -321,20 +520,20 @@
     <div class="container">
         <div class="content">
         <!-- HEADER / MAIN SECTION -->
-        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;"><img src="https://i.ibb.co/fdj2j9VY/MINHA-LOGO-FF.png" alt="Logo" width="200" height="60" style="width: 200px; height: auto; border-radius: 0px; object-fit: cover;" loading="eager" fetchpriority="high" decoding="async" /></div>
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;"><img src="https://i.ibb.co/j9dNHMCD/6c056905-c6b2-4a4e-b601-dd7db35ebe7d.png" alt="Logo" width="200" height="60" style="width: 200px; height: auto; border-radius: 0px; object-fit: cover;" loading="eager" fetchpriority="high" decoding="async" /></div>
 <div style="height: 16px;"></div>
-<h1 style="color: #fafafa; font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 800; text-align: center; line-height: 1.18; letter-spacing: 1px;  padding: 0 0 16px; margin: 0;">O SEGREDO DOS FAMOSOS!</h1>
+<h1 style="color: #fafafa; font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 800; text-align: center; line-height: 1.18; letter-spacing: 1px;  padding: 0 0 16px; margin: 0;">VEM XITAR COM NZWSENSI 💙</h1>
 <div style="display: flex; justify-content: center; width: 100%;"><div style="width: 100%; max-width: 100%; border-radius: 0px; margin: 0 auto;">
   
-    <div id="vturb_ytp3p8p_wrapper" class="vturb-player-wrapper" style="position: relative; width: 100%; max-width: 100%; margin: 0 auto;">
+    <div id="vturb_c07184q_wrapper" class="vturb-player-wrapper" style="position: relative; width: 100%; max-width: 100%; margin: 0 auto;">
       
       <!-- MAIN VTURB CONTAINER -->
-      <div id="vturb_ytp3p8p_container" class="vturb-player-container" style="position: relative; width: 100%; border-radius: 12px; overflow: hidden; background: #000000; box-shadow: 0 14px 40px rgba(0,0,0,0.9), 0 0 28px rgba(255, 69, 0, 0.35); user-select: none; -webkit-user-select: none; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <div id="vturb_c07184q_container" class="vturb-player-container" style="position: relative; width: 100%; border-radius: 12px; overflow: hidden; background: #000000; box-shadow: 0 14px 40px rgba(0,0,0,0.9), 0 0 28px rgba(255, 69, 0, 0.35); user-select: none; -webkit-user-select: none; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         
         <!-- Video Aspect Ratio Frame -->
         <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: #050505;">
           <video 
-            id="vturb_ytp3p8p" 
+            id="vturb_c07184q" 
             src="https://www.image2url.com/r2/default/videos/1788927393977-90c859a1-a8b8-41c8-954f-e70a344c3fb6.mp4" 
             
             
@@ -342,13 +541,13 @@
             muted 
             playsinline 
             webkit-playsinline 
-            preload="auto" 
+            preload="metadata" 
             oncontextmenu="return false;"
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px; cursor: pointer;"
           ></video>
 
           <!-- VTURB SMART AUTOPLAY "TOQUE PARA OUVIR" OVERLAY (EXACT REFERENCE IMAGE MATCH) -->
-          <div id="vturb_ytp3p8p_unmute_overlay" style="position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); cursor: pointer; padding: 12px; transition: opacity 0.35s ease, transform 0.35s ease;">
+          <div id="vturb_c07184q_unmute_overlay" style="position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); cursor: pointer; padding: 12px; transition: opacity 0.35s ease, transform 0.35s ease;">
             
             
             <!-- VTURB EXACT IMAGE MATCH: SOLID ORANGE-RED CARD (COMPACT & POLISHED) -->
@@ -390,7 +589,7 @@
           </div>
 
           <!-- PAUSE STATE OVERLAY (VTURB PLAY BUTTON) -->
-          <div id="vturb_ytp3p8p_pause_overlay" style="position: absolute; inset: 0; z-index: 20; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.55); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); cursor: pointer; transition: opacity 0.3s ease;">
+          <div id="vturb_c07184q_pause_overlay" style="position: absolute; inset: 0; z-index: 20; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.55); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); cursor: pointer; transition: opacity 0.3s ease;">
             <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
               <div style="width: 78px; height: 78px; border-radius: 50%; background: linear-gradient(135deg, #ff2b42, #ff8331); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 35px rgba(255, 60, 60, 0.6), 0 10px 30px rgba(0,0,0,0.8); transform: scale(1); transition: transform 0.2s ease;">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff" style="margin-left: 4px;">
@@ -404,14 +603,14 @@
           </div>
 
           <!-- VTURB MINIMALIST CONTROLS BAR -->
-          <div id="vturb_ytp3p8p_controls" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 25; background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 60%, transparent 100%); padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 8px; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
+          <div id="vturb_c07184q_controls" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 25; background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 60%, transparent 100%); padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 8px; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
             
             <!-- High-Conversion Interactive Progress Bar -->
             
-            <div id="vturb_ytp3p8p_progress_container" style="position: relative; width: 100%; height: 5px; background: rgba(255,255,255,0.22); border-radius: 4px; cursor: pointer; pointer-events: auto; transition: height 0.15s ease;">
-              <div id="vturb_ytp3p8p_buffer_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: rgba(255,255,255,0.35); border-radius: 4px; pointer-events: none;"></div>
-              <div id="vturb_ytp3p8p_progress_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: #22c55e; border-radius: 4px; box-shadow: 0 0 10px #22c55e; pointer-events: none;"></div>
-              <div id="vturb_ytp3p8p_scrubber" style="position: absolute; top: 50%; left: 0%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: #ffffff; border: 2px solid #22c55e; box-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 6px #22c55e; pointer-events: none; opacity: 0; transition: opacity 0.15s;"></div>
+            <div id="vturb_c07184q_progress_container" style="position: relative; width: 100%; height: 5px; background: rgba(255,255,255,0.22); border-radius: 4px; cursor: pointer; pointer-events: auto; transition: height 0.15s ease;">
+              <div id="vturb_c07184q_buffer_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: rgba(255,255,255,0.35); border-radius: 4px; pointer-events: none;"></div>
+              <div id="vturb_c07184q_progress_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: #22c55e; border-radius: 4px; box-shadow: 0 0 10px #22c55e; pointer-events: none;"></div>
+              <div id="vturb_c07184q_scrubber" style="position: absolute; top: 50%; left: 0%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: #ffffff; border: 2px solid #22c55e; box-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 6px #22c55e; pointer-events: none; opacity: 0; transition: opacity 0.15s;"></div>
             </div>
             
 
@@ -422,19 +621,19 @@
               <div style="display: flex; align-items: center; gap: 14px;">
                 
                 <!-- Play/Pause Button -->
-                <button id="vturb_ytp3p8p_btn_play" aria-label="Play/Pause" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: transform 0.15s ease;">
-                  <svg id="vturb_ytp3p8p_icon_play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                  <svg id="vturb_ytp3p8p_icon_pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                <button id="vturb_c07184q_btn_play" aria-label="Play/Pause" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: transform 0.15s ease;">
+                  <svg id="vturb_c07184q_icon_play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <svg id="vturb_c07184q_icon_pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
                 </button>
 
                 <!-- Volume Button -->
-                <button id="vturb_ytp3p8p_btn_volume" aria-label="Mute/Volume" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
-                  <svg id="vturb_ytp3p8p_icon_vol_high" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-                  <svg id="vturb_ytp3p8p_icon_vol_mute" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                <button id="vturb_c07184q_btn_volume" aria-label="Mute/Volume" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                  <svg id="vturb_c07184q_icon_vol_high" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  <svg id="vturb_c07184q_icon_vol_mute" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
                 </button>
 
                 <!-- Monospace Time Display -->
-                <span id="vturb_ytp3p8p_time_text" style="font-size: 12px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 700; color: #cbd5e1; letter-spacing: 0.5px;">00:00 / 00:00</span>
+                <span id="vturb_c07184q_time_text" style="font-size: 12px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 700; color: #cbd5e1; letter-spacing: 0.5px;">00:00 / 00:00</span>
               </div>
 
               <!-- Right: Speed Selector & Fullscreen -->
@@ -443,10 +642,10 @@
                 
                 <!-- VTurb Playback Speed Toggle -->
                 <div style="position: relative;">
-                  <button id="vturb_ytp3p8p_btn_speed" style="background: rgba(255,255,255,0.12); hover:background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.2); color: #ffffff; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 800; font-family: monospace; cursor: pointer; outline: none;">
+                  <button id="vturb_c07184q_btn_speed" style="background: rgba(255,255,255,0.12); hover:background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.2); color: #ffffff; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 800; font-family: monospace; cursor: pointer; outline: none;">
                     1.0x
                   </button>
-                  <div id="vturb_ytp3p8p_speed_menu" style="position: absolute; bottom: 32px; right: 0; background: rgba(15, 18, 25, 0.96); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 4px; display: none; flex-direction: column; gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 40; min-width: 65px;">
+                  <div id="vturb_c07184q_speed_menu" style="position: absolute; bottom: 32px; right: 0; background: rgba(15, 18, 25, 0.96); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 4px; display: none; flex-direction: column; gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 40; min-width: 65px;">
                     <button data-speed="1.0" class="vturb-speed-opt" style="background: none; border: none; color: #fff; padding: 4px 8px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 4px; cursor: pointer;">1.0x</button>
                     <button data-speed="1.25" class="vturb-speed-opt" style="background: none; border: none; color: #fff; padding: 4px 8px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 4px; cursor: pointer;">1.25x</button>
                     <button data-speed="1.5" class="vturb-speed-opt" style="background: none; border: none; color: #fff; padding: 4px 8px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 4px; cursor: pointer;">1.5x</button>
@@ -456,7 +655,7 @@
                 
 
                 <!-- Fullscreen Button -->
-                <button id="vturb_ytp3p8p_btn_fullscreen" aria-label="Tela Cheia" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                <button id="vturb_c07184q_btn_fullscreen" aria-label="Tela Cheia" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
                   <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
                 </button>
 
@@ -472,16 +671,16 @@
 
       <!-- VTURB STICKY FLOATING MINI-PLAYER ON SCROLL (PICTURE-IN-PICTURE) -->
       
-      <div id="vturb_ytp3p8p_sticky_dock" style="position: fixed; bottom: 20px; right: 20px; width: 270px; max-width: calc(100vw - 40px); aspect-ratio: 16/9; z-index: 99999; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 12px 35px rgba(0,0,0,0.85), 0 0 20px #22c55e40; border: 2px solid #22c55e; display: none; opacity: 0; transform: translateY(20px) scale(0.9); transition: opacity 0.3s ease, transform 0.3s ease; cursor: pointer;">
+      <div id="vturb_c07184q_sticky_dock" style="position: fixed; bottom: 20px; right: 20px; width: 270px; max-width: calc(100vw - 40px); aspect-ratio: 16/9; z-index: 99999; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 12px 35px rgba(0,0,0,0.85), 0 0 20px #22c55e40; border: 2px solid #22c55e; display: none; opacity: 0; transform: translateY(20px) scale(0.9); transition: opacity 0.3s ease, transform 0.3s ease; cursor: pointer;">
         <!-- Floating Canvas / Mini Video Viewport -->
-        <canvas id="vturb_ytp3p8p_sticky_canvas" style="width: 100%; height: 100%; object-fit: cover; display: block;"></canvas>
+        <canvas id="vturb_c07184q_sticky_canvas" style="width: 100%; height: 100%; object-fit: cover; display: block;"></canvas>
         
         <!-- Sticky Overlay Header -->
         <div style="position: absolute; top: 0; left: 0; right: 0; padding: 6px 8px; display: flex; items-center; justify-content: space-between; background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent); pointer-events: auto;">
           <span style="font-size: 10px; font-weight: 800; color: #22c55e; background: rgba(0,0,0,0.7); padding: 2px 6px; border-radius: 10px; display: flex; align-items: center; gap: 4px;">
             <span style="width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: vturbPing 1.2s infinite;"></span> VSL Ativa
           </span>
-          <button id="vturb_ytp3p8p_sticky_close" style="background: rgba(0,0,0,0.65); border: none; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; cursor: pointer;">✕</button>
+          <button id="vturb_c07184q_sticky_close" style="background: rgba(0,0,0,0.65); border: none; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; cursor: pointer;">✕</button>
         </div>
       </div>
       
@@ -515,37 +714,37 @@
           50% { transform: scale(1.4); opacity: 0.4; }
           100% { transform: scale(0.9); opacity: 1; }
         }
-        #vturb_ytp3p8p_progress_container:hover { height: 8px !important; }
-        #vturb_ytp3p8p_progress_container:hover #vturb_ytp3p8p_scrubber { opacity: 1 !important; }
+        #vturb_c07184q_progress_container:hover { height: 8px !important; }
+        #vturb_c07184q_progress_container:hover #vturb_c07184q_scrubber { opacity: 1 !important; }
         .vturb-speed-opt:hover { background-color: rgba(255,255,255,0.15) !important; }
       </style>
 
       <!-- VTURB ENGINE CONTROLLER SCRIPT -->
       <script async>
         (function() {
-          var video = document.getElementById('vturb_ytp3p8p');
-          var container = document.getElementById('vturb_ytp3p8p_container');
-          var wrapper = document.getElementById('vturb_ytp3p8p_wrapper');
-          var unmuteOverlay = document.getElementById('vturb_ytp3p8p_unmute_overlay');
-          var pauseOverlay = document.getElementById('vturb_ytp3p8p_pause_overlay');
-          var controls = document.getElementById('vturb_ytp3p8p_controls');
-          var progressBar = document.getElementById('vturb_ytp3p8p_progress_bar');
-          var bufferBar = document.getElementById('vturb_ytp3p8p_buffer_bar');
-          var scrubber = document.getElementById('vturb_ytp3p8p_scrubber');
-          var progressContainer = document.getElementById('vturb_ytp3p8p_progress_container');
-          var timeText = document.getElementById('vturb_ytp3p8p_time_text');
-          var btnPlay = document.getElementById('vturb_ytp3p8p_btn_play');
-          var iconPlay = document.getElementById('vturb_ytp3p8p_icon_play');
-          var iconPause = document.getElementById('vturb_ytp3p8p_icon_pause');
-          var btnVolume = document.getElementById('vturb_ytp3p8p_btn_volume');
-          var iconVolHigh = document.getElementById('vturb_ytp3p8p_icon_vol_high');
-          var iconVolMute = document.getElementById('vturb_ytp3p8p_icon_vol_mute');
-          var btnSpeed = document.getElementById('vturb_ytp3p8p_btn_speed');
-          var speedMenu = document.getElementById('vturb_ytp3p8p_speed_menu');
-          var btnFullscreen = document.getElementById('vturb_ytp3p8p_btn_fullscreen');
-          var stickyDock = document.getElementById('vturb_ytp3p8p_sticky_dock');
-          var stickyCanvas = document.getElementById('vturb_ytp3p8p_sticky_canvas');
-          var stickyClose = document.getElementById('vturb_ytp3p8p_sticky_close');
+          var video = document.getElementById('vturb_c07184q');
+          var container = document.getElementById('vturb_c07184q_container');
+          var wrapper = document.getElementById('vturb_c07184q_wrapper');
+          var unmuteOverlay = document.getElementById('vturb_c07184q_unmute_overlay');
+          var pauseOverlay = document.getElementById('vturb_c07184q_pause_overlay');
+          var controls = document.getElementById('vturb_c07184q_controls');
+          var progressBar = document.getElementById('vturb_c07184q_progress_bar');
+          var bufferBar = document.getElementById('vturb_c07184q_buffer_bar');
+          var scrubber = document.getElementById('vturb_c07184q_scrubber');
+          var progressContainer = document.getElementById('vturb_c07184q_progress_container');
+          var timeText = document.getElementById('vturb_c07184q_time_text');
+          var btnPlay = document.getElementById('vturb_c07184q_btn_play');
+          var iconPlay = document.getElementById('vturb_c07184q_icon_play');
+          var iconPause = document.getElementById('vturb_c07184q_icon_pause');
+          var btnVolume = document.getElementById('vturb_c07184q_btn_volume');
+          var iconVolHigh = document.getElementById('vturb_c07184q_icon_vol_high');
+          var iconVolMute = document.getElementById('vturb_c07184q_icon_vol_mute');
+          var btnSpeed = document.getElementById('vturb_c07184q_btn_speed');
+          var speedMenu = document.getElementById('vturb_c07184q_speed_menu');
+          var btnFullscreen = document.getElementById('vturb_c07184q_btn_fullscreen');
+          var stickyDock = document.getElementById('vturb_c07184q_sticky_dock');
+          var stickyCanvas = document.getElementById('vturb_c07184q_sticky_canvas');
+          var stickyClose = document.getElementById('vturb_c07184q_sticky_close');
 
           if (!video) return;
 
@@ -840,21 +1039,159 @@
   
 </div></div>
 <div style="height: 24px;"></div><div style="text-align: center; margin-top: 0px; margin-bottom: 0px;">
-        <button type="button" onclick="var t=document.getElementById('oferta');if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}" style="background-color: #22c55e; color: #ffffff; font-size: 18px; font-weight: 700; text-align: center; padding: 18px 48px; border-radius: 12px; animation: pulseBtn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; display: inline-block; border: none; text-decoration: none; transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">EU QUERO!</button>
+        <button type="button" onclick="var t=document.getElementById('oferta');if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}" style="background-color: #724bce; color: #ffffff; font-size: 18px; font-weight: 700; text-align: center; padding: 18px 48px; border-radius: 12px; animation: pulseBtn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; display: inline-block; border: none; text-decoration: none; transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">EU QUERO!</button>
       </div>
-<p style="color: #22c55e; font-size: 14px; font-weight: 600; text-align: center; padding: 16px 0 0; animation: fadeIn 0.6s ease-out;">⭐⭐⭐⭐⭐ + DE 5 MIL PLAYERS ATIVOS</p></div></div>
+<p style="color: #724bce; font-size: 14px; font-weight: 600; text-align: center; padding: 16px 0 0; animation: fadeIn 0.6s ease-out;">⭐⭐⭐⭐⭐ + DE 5 MIL PLAYERS ATIVOS</p></div></div>
+        
         
         <!-- TARGET AUDIENCE SECTION -->
         <div class="section" style="position: relative; background-color: #050505; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><h2 style="color: #ffffff; font-size: 24px; font-weight: 700; text-align: center; padding: 0 0 24px; animation: fadeIn 0.6s ease-out;">O PAINEL FOI FEITO PARA:</h2>
 
-<div class="scroll-reveal" style="margin-bottom: 24px; text-align: center;">
-  <div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;">
-    <img src="https://i.ibb.co/GQ6V2s3V/minha-imagem-1.png" alt="Imagem" width="320" height="180" style="width: 80%; height: auto; border-radius: 12px; object-fit: cover;" loading="lazy" decoding="async" />
+<div class="scroll-reveal target-card-reveal" style="margin-bottom: 24px; text-align: center; width: 100%;">
+  <div class="target-img-container-full" style="width: calc(100% + 40px); margin-left: -20px; margin-right: -20px; overflow: hidden; position: relative; background-color: #050505;">
+    <div class="target-img-wrapper" style="position: relative; width: 100%; overflow: hidden; display: block; margin: 0; padding: 0; border: none; border-radius: 0;">
+      <img src="https://i.ibb.co/hzKZBsy/5d07093e-0c81-415b-87ee-eaa5ce62b996.png" alt="Ilustração do Público Alvo" width="480" height="270" class="target-animated-img target-motion-breathe" style="width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; margin: 0 auto !important; padding: 0 !important; border: none !important; border-radius: 0px !important; outline: none !important; box-shadow: none !important;" loading="lazy" decoding="async" />
+    </div>
   </div>
-  <p style="color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; padding: 16px 0 0; margin: 0;">PARA QUEM NÃO QUER SUJAR O JOGO, MAS SIM IGUALAR O NIVEL JOGANDO APOSTADOS E CAMPS EM QUE A MAIORIA É XITADO.</p>
+  <p style="color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; padding: 20px 20px 0; margin: 0; line-height: 1.5; text-shadow: 0 2px 6px rgba(0,0,0,0.85);">PARA QUEM NÃO QUER SUJAR O JOGO, MAS SIM IGUALAR O NIVEL JOGANDO APOSTADOS E CAMPS EM QUE A MAIORIA É XITADO.</p>
 </div>
   
 </div></div>
+
+        <!-- WHAT YOU GET SECTION (O QUE VOCÊ GANHA COM A NZWSENSI) -->
+        
+        <div class="section" style="position: relative; background: transparent; padding-top: 36px; padding-bottom: 36px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px); border: none;">
+          <div style="position: relative; z-index: 2; max-width: 520px; margin: 0 auto;">
+            
+            <!-- Section Heading (White Bold Upper with Text Shadow) -->
+            <h2 class="scroll-reveal" style="color: #ffffff; font-size: 26px; font-weight: 900; text-align: center; text-transform: uppercase; margin: 0 auto 26px auto; letter-spacing: 0.5px; line-height: 1.25; text-shadow: 0 2px 14px rgba(0,0,0,0.9); max-width: 440px;">
+              OQUE VOCÊ GANHA COM A NZWSENSI?
+            </h2>
+
+            <!-- 3D Phone Mockup with Entrance Spin and Floating Transition -->
+            <div class="scroll-reveal phone-3d-wrap" style="position: relative; text-align: center; margin: 0 auto 28px auto; max-width: 290px;">
+              <img id="phone-3d-mockup"
+                   src="https://i.ibb.co/MxjZpbzV/f86b70d4-6717-48cb-ac93-16bca73389aa.png" 
+                   alt="OQUE VOCÊ GANHA COM A NZWSENSI?" 
+                   class="phone-3d-element" 
+                   style="position: relative; z-index: 2; width: 100%; max-width: 275px; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 18px 32px rgba(0,0,0,0.9)); object-fit: contain;" 
+                   loading="lazy" decoding="async" />
+            </div>
+
+            <!-- 6 Benefit Cards Grid (2 Columns, matching Hashira layout) -->
+            <div class="scroll-reveal" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 460px; margin: 0 auto;">
+              
+      <div class="benefit-card-hover" style="background-color: #06050b; border: 1.5px solid #2e1065; border-radius: 14px; padding: 16px 10px 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.65), inset 0 0 12px rgba(168, 85, 247, 0.06); box-sizing: border-box; min-height: 98px;">
+        
+      <div style="font-size: 26px; line-height: 1; margin-bottom: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">😈</div>
+    
+        <span style="color: #ffffff; font-size: 12.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+          SENSI FULL VERMELHA
+        </span>
+      </div>
+    
+      <div class="benefit-card-hover" style="background-color: #06050b; border: 1.5px solid #2e1065; border-radius: 14px; padding: 16px 10px 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.65), inset 0 0 12px rgba(168, 85, 247, 0.06); box-sizing: border-box; min-height: 98px;">
+        
+      <div style="font-size: 26px; line-height: 1; margin-bottom: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">⏳</div>
+    
+        <span style="color: #ffffff; font-size: 12.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+          ACESSO VITALÍCIO
+        </span>
+      </div>
+    
+      <div class="benefit-card-hover" style="background-color: #06050b; border: 1.5px solid #2e1065; border-radius: 14px; padding: 16px 10px 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.65), inset 0 0 12px rgba(168, 85, 247, 0.06); box-sizing: border-box; min-height: 98px;">
+        
+      <div style="font-size: 26px; line-height: 1; margin-bottom: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">🎯</div>
+    
+        <span style="color: #ffffff; font-size: 12.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+          MIRA SEM PINAR
+        </span>
+      </div>
+    
+      <div class="benefit-card-hover" style="background-color: #06050b; border: 1.5px solid #2e1065; border-radius: 14px; padding: 16px 10px 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.65), inset 0 0 12px rgba(168, 85, 247, 0.06); box-sizing: border-box; min-height: 98px;">
+        
+      <div style="font-size: 26px; line-height: 1; margin-bottom: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">🏆</div>
+    
+        <span style="color: #ffffff; font-size: 12.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+          VAI SER O MVP DAS PARTIDAS
+        </span>
+      </div>
+    
+      <div class="benefit-card-hover" style="background-color: #06050b; border: 1.5px solid #2e1065; border-radius: 14px; padding: 16px 10px 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.65), inset 0 0 12px rgba(168, 85, 247, 0.06); box-sizing: border-box; min-height: 98px;">
+        
+      <div style="font-size: 26px; line-height: 1; margin-bottom: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">🤔</div>
+    
+        <span style="color: #ffffff; font-size: 12.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+          NENHUM RISCO DE BAN
+        </span>
+      </div>
+    
+      <div class="benefit-card-hover" style="background-color: #06050b; border: 1.5px solid #2e1065; border-radius: 14px; padding: 16px 10px 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.65), inset 0 0 12px rgba(168, 85, 247, 0.06); box-sizing: border-box; min-height: 98px;">
+        
+      <div style="font-size: 26px; line-height: 1; margin-bottom: 8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">☠️</div>
+    
+        <span style="color: #ffffff; font-size: 12.5px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; margin: 0; text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+          VAI SER ACUSADO DE XIT
+        </span>
+      </div>
+    
+            </div>
+
+          </div>
+        </div>
+        
+
+        <!-- BEFORE & AFTER (ANTES E DEPOIS COMPARISON SECTION) -->
+        
+        <div class="section" style="position: relative; background: transparent; padding-top: 36px; padding-bottom: 36px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px); border: none;">
+          <div style="position: relative; z-index: 2; max-width: 520px; margin: 0 auto;">
+            
+            <!-- Section Heading (White Bold Upper with Text Shadow) -->
+            <h2 class="scroll-reveal" style="color: #ffffff; font-size: 26px; font-weight: 900; text-align: center; text-transform: uppercase; margin: 0 auto 26px auto; letter-spacing: 0.5px; line-height: 1.25; text-shadow: 0 2px 14px rgba(0,0,0,0.9); max-width: 440px;">
+              CHEGA DE DAR SÓ PEITO, E<br/>COMECE A DAR SÓ CAPA!
+            </h2>
+
+            <!-- 2 Columns: ANTES & DEPOIS -->
+            <div class="scroll-reveal before-after-grid">
+              
+              <!-- Card ANTES -->
+              <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <span style="color: #ffffff; font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.85); text-align: center;">
+                  ANTES
+                </span>
+                <div class="before-after-box" style="border: 2.5px solid #a855f7; box-shadow: 0 0 18px rgba(168, 85, 247, 0.35), 0 8px 24px rgba(0,0,0,0.7); width: 100%;">
+                  <img src="https://buavjrdrxhmgewpqagaw.supabase.co/storage/v1/object/public/modelos/5-0%20final.webp" 
+                       alt="ANTES" 
+                       class="before-after-media" 
+                       width="300"
+                       height="300"
+                       loading="lazy"
+                       decoding="async"
+                       fetchpriority="low" />
+                </div>
+              </div>
+
+              <!-- Card DEPOIS -->
+              <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <span style="color: #facc15; font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; text-shadow: 0 0 14px rgba(250, 204, 21, 0.5); text-align: center;">
+                  DEPOIS
+                </span>
+                <div class="before-after-box" style="border: 2.5px solid #eab308; box-shadow: 0 0 18px rgba(234, 179, 8, 0.35), 0 8px 24px rgba(0,0,0,0.7); width: 100%;">
+                  <img src="https://buavjrdrxhmgewpqagaw.supabase.co/storage/v1/object/public/modelos/6-1%20final.webp" 
+                       alt="DEPOIS" 
+                       class="before-after-media" 
+                       width="300"
+                       height="300"
+                       loading="lazy"
+                       decoding="async"
+                       fetchpriority="low" />
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
         
         <!-- FEEDBACKS SECTION (PRINTS DE IMAGEM + BLOCO DE VÍDEO ABAIXO) -->
         
@@ -868,7 +1205,7 @@
                   <div id="carousel_1njhr3kmo" style="display: flex; transition: transform 0.5s ease-out; width: 100%;">
                     
         <div style="width: 100%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background-color: #000000; overflow: hidden; border-radius: 14px;">
-          <img src="https://i.ibb.co/xtxxwnvX/Whats-App-Image-2025-12-19-at-18-00-18-1.jpg" alt="Depoimento 1" width="480" height="270" style="width: 100%; height: auto; max-height: 85vh; object-fit: contain; aspect-ratio: 16/9; display: block; margin: 0 auto; border-radius: 14px;" loading="eager" decoding="async" />
+          <img src="https://i.ibb.co/xtxxwnvX/Whats-App-Image-2025-12-19-at-18-00-18-1.jpg" alt="Depoimento 1" width="480" height="270" style="width: 100%; height: auto; max-height: 85vh; object-fit: contain; aspect-ratio: 16/9; display: block; margin: 0 auto; border-radius: 14px;" loading="lazy" decoding="async" />
         </div>
   
         <div style="width: 100%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background-color: #000000; overflow: hidden; border-radius: 14px;">
@@ -921,6 +1258,7 @@
           <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background-color: #000000; border-radius: 14px; overflow: hidden;">
             <iframe 
               src="https://player.vimeo.com/video/1224285301?badge=0&autopause=0&player_id=0&app_id=58479" 
+              loading="lazy"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
               allowfullscreen 
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
@@ -937,96 +1275,6 @@
         
         <!-- HEADTRACK / RECURSOS SECTION (MATCHING SCREENSHOT) -->
         
-        <div class="section" style="position: relative; background-color: #000000; padding-top: 36px; padding-bottom: 36px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);">
-          <div style="position: relative; z-index: 2;">
-            
-            <!-- Section Title (Neon Purple) -->
-            <h2 class="" style="color: #a855f7; font-size: 26px; font-weight: 900; text-align: center; text-transform: uppercase; margin: 0 auto 20px auto; letter-spacing: 0.5px; line-height: 1.25; text-shadow: 0 0 20px rgba(168, 85, 247, 0.45); max-width: 480px;">
-              O QUE TEM NO HEADTRACK?
-            </h2>
-
-            <!-- Purple Neon Box Container -->
-            <div class="" style="background-color: #000000; border: 2.5px solid #a82bf5; border-radius: 26px; padding: 28px 24px 26px 24px; box-shadow: 0 0 25px rgba(168, 43, 245, 0.45), inset 0 0 15px rgba(168, 43, 245, 0.12); max-width: 440px; margin: 0 auto;">
-              
-              <!-- Features List (Centered block with left-aligned items) -->
-              <div style="display: flex; flex-direction: column; gap: 8.5px; width: fit-content; max-width: 100%; margin: 0 auto;">
-                
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Rastreador de Cabeça</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Melhorar 2x e 4x</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Estabilizador de Mira</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Suavizar Puxada</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Rastreamento Avançado</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Facilitar Macetinho</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Facilitar LagTrick</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Otimizar Sensibilidade</span>
-    </div>
-  
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a82bf5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span style="font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.4; letter-spacing: 0.2px;">Otimizar Serviços</span>
-    </div>
-  
-              </div>
-              
-              <!-- Bottom Text (E Muito mais nos Pacotes!) -->
-              <div style="color: #ffffff; font-size: 18.5px; font-weight: 800; text-align: center; margin-top: 24px; letter-spacing: 0.2px; text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
-                E Muito mais!
-              </div>
-              
-            </div>
-
-            <!-- Free Unboxed Image Below the Card -->
-            
-          </div>
-        </div>
         
         
         <!-- OFFERS SECTION -->
@@ -1042,20 +1290,26 @@
         
         <!-- PLAN 1 -->
         
-        <div class="scroll-reveal" style="background-color: #000000; color: #ffffff; text-align: center; padding: 32px; border-radius: 16px; border: 2px solid #5a28cc; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; margin-bottom: 24px;">
+        <div class="scroll-reveal" style="background-color: #000000; color: #ffffff; text-align: center; padding: 32px; border-radius: 16px; border: 2px solid #6a37e1; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden; margin-bottom: 24px;">
+          <div style="position: absolute; top: 12px; right: 12px; background-color: #6a37e1; color: #ffffff; padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,0.2); white-space: nowrap;">🎯 MAIS CUSTO BENEFICIO </div>
+          <div style="margin-bottom: 20px;"><img src="https://i.ibb.co/j9dNHMCD/6c056905-c6b2-4a4e-b601-dd7db35ebe7d.png" alt="NZWSENSI V5 - 30 DIAS " width="250" height="75" style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; margin: 0 auto; display: block;" loading="lazy" decoding="async" /></div>
+          <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #ffffff;">NZWSENSI V5 - 30 DIAS </h3>
           
-          <div style="margin-bottom: 20px;"><img src="https://i.ibb.co/fV2mKbY7/image-pre-o.png" alt="APK MOD V5 - 1 MÊS" width="250" height="75" style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; margin: 0 auto; display: block;" loading="lazy" decoding="async" /></div>
-          <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #ffffff;">APK MOD V5 - 1 MÊS</h3>
+          <!-- PREÇO SUPERIOR (ESTILO RETORNADO) -->
           <p style="font-size: 14px; opacity: 0.7; margin-bottom: 8px;">Acesso mensal</p>
           <p style="font-size: 20px; text-decoration: line-through; opacity: 0.5; margin-bottom: 4px;">R$49,99</p>
           <div style="margin-bottom: 24px;">
-            <span style="font-size: 48px; font-weight: 800; color: #5a28cc; line-height: 1;">R$19,90</span>
+            <span style="font-size: 48px; font-weight: 800; color: #6a37e1; line-height: 1;">R$10,90</span>
           </div>
-          <div style="height: 1px; background-color: #5a28cc; margin: 0 -16px 24px;"></div>
+
+          <!-- LINHA DIVISÓRIA SUPERIOR -->
+          <div style="height: 1px; background-color: #6a37e1; margin: 0 -16px 24px;"></div>
+
+          <!-- LISTA DE BENEFÍCIOS -->
           <div style="text-align: left; margin-bottom: 24px;">
             
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1064,7 +1318,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1073,7 +1327,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1082,7 +1336,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1091,7 +1345,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1100,7 +1354,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1109,7 +1363,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1118,7 +1372,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1127,7 +1381,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1136,7 +1390,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1145,7 +1399,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1154,7 +1408,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5a28cc; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #6a37e1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1163,26 +1417,54 @@
         </div>
   
           </div>
-          <a href="https://ggcheckout.app/checkout/v5/aSekaMZSD5W3aT8ks6Ca" target="_blank" rel="noopener noreferrer" class="checkout-btn" style="display: block; width: 100%; padding: 16px 24px; background-color: #5a28cc; color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; border-radius: 12px; box-shadow: 0 4px 14px #5a28cc40; text-decoration: none; box-sizing: border-box; cursor: pointer;">COMPRAR AGORA COM DESCONTO</a>
+
+          <!-- LINHA DIVISÓRIA INFERIOR (COMO NA IMAGEM) -->
+          <div style="height: 1px; background-color: #6a37e1; margin: 0 -16px 24px;"></div>
+
+          <!-- PREÇO INFERIOR (EXATAMENTE COMO NA FOTO) -->
+          <div style="margin-bottom: 20px; text-align: center;">
+            <div style="font-size: 18px; font-weight: 800; color: #ffffff; margin-bottom: 3px; letter-spacing: 0.3px;">
+              De <span style="text-decoration: line-through; opacity: 0.9;">R$49,99</span>
+            </div>
+            <div style="font-size: 18px; font-weight: 800; color: #ffffff; margin-bottom: 8px; letter-spacing: 0.3px;">
+              por apenas:
+            </div>
+            <div style="font-size: 52px; font-weight: 900; color: #6a37e1; line-height: 1; letter-spacing: -1px; text-shadow: 0 0 25px #6a37e150;">
+              R$10,90
+            </div>
+          </div>
+
+          <!-- BOTÃO DE COMPRA COM DESIGN ARREDONDADO (PILL) CONFORME FOTO -->
+          <a href="https://ggcheckout.app/checkout/v5/aSekaMZSD5W3aT8ks6Ca" target="_blank" rel="noopener noreferrer" class="checkout-btn" style="display: block; width: 100%; padding: 18px 24px; background-color: #6a37e1; color: #ffffff; font-size: 18px; font-weight: 900; text-align: center; border-radius: 50px; box-shadow: 0 4px 18px #6a37e155; text-decoration: none; box-sizing: border-box; cursor: pointer; text-transform: uppercase; line-height: 1.25; letter-spacing: 0.5px;">COMPRAR AGORA COM DESCONTO</a>
+          
+          <div style="margin-top: 14px; text-align: center;">
+            <img src="https://i.ibb.co/WWBnkXPy/hwm5gk-FF1-Ts-L1i-GD70-LQOovw.png" alt="Formas de Pagamento e Compra Segura" width="280" height="36" style="width: 100%; max-width: 280px; height: auto; margin: 0 auto; display: block; opacity: 0.95;" loading="lazy" decoding="async" />
+          </div>
         </div>
         
 
          <!-- PLAN 2 (POPULAR) -->
         
-        <div class="scroll-reveal" style="background-color: #000000; color: #ffffff; text-align: center; padding: 32px; border-radius: 16px; border: 2px solid #1ad151; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden;">
-          <div style="position: absolute; top: 12px; right: 12px; background-color: #24db39; color: #fffafa; padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,0.2); white-space: nowrap;">🏆 MAIS COMPLETO</div>
-          <div style="margin-bottom: 20px;"><img src="https://i.ibb.co/5xr8tKgg/image.png" alt="APK MOD V5 - PERMANENTE" width="250" height="75" style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; margin: 0 auto; display: block;" loading="lazy" decoding="async" /></div>
-          <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #ffffff;">APK MOD V5 - PERMANENTE</h3>
+        <div class="scroll-reveal" style="background-color: #000000; color: #ffffff; text-align: center; padding: 32px; border-radius: 16px; border: 2px solid #1a38d1; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 12px; right: 12px; background-color: #916ef2; color: #fffafa; padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,0.2); white-space: nowrap;">🏆 MAIS COMPLETO</div>
+          <div style="margin-bottom: 20px;"><img src="https://i.ibb.co/j9dNHMCD/6c056905-c6b2-4a4e-b601-dd7db35ebe7d.png" alt="NZWSENSI V5 - PERMANENTE" width="250" height="75" style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; margin: 0 auto; display: block;" loading="lazy" decoding="async" /></div>
+          <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #ffffff;">NZWSENSI V5 - PERMANENTE</h3>
+          
+          <!-- PREÇO SUPERIOR (ESTILO RETORNADO) -->
           <p style="font-size: 14px; opacity: 0.7; margin-bottom: 8px;">Acesso permanente</p>
           <p style="font-size: 20px; text-decoration: line-through; opacity: 0.5; margin-bottom: 4px;">R$279,99</p>
           <div style="margin-bottom: 24px;">
-            <span style="font-size: 48px; font-weight: 800; color: #1ad151; line-height: 1;">R$24,90</span>
+            <span style="font-size: 48px; font-weight: 800; color: #1a38d1; line-height: 1;">R$19,90</span>
           </div>
-          <div style="height: 1px; background-color: #1ad151; margin: 0 -16px 24px;"></div>
+
+          <!-- LINHA DIVISÓRIA SUPERIOR -->
+          <div style="height: 1px; background-color: #1a38d1; margin: 0 -16px 24px;"></div>
+
+          <!-- LISTA DE BENEFÍCIOS -->
           <div style="text-align: left; margin-bottom: 24px;">
             
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1191,7 +1473,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1200,7 +1482,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1209,7 +1491,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1218,7 +1500,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1227,7 +1509,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1236,7 +1518,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1245,7 +1527,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1254,7 +1536,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1263,7 +1545,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1272,7 +1554,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1281,7 +1563,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1290,7 +1572,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1299,7 +1581,7 @@
         </div>
   
         <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
-          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1ad151; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #1a38d1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
@@ -1308,11 +1590,34 @@
         </div>
   
           </div>
-          <a href="https://pagamentoconfiavel.com.br/YmCqYJwM" target="_blank" rel="noopener noreferrer" class="checkout-btn" style="display: block; width: 100%; padding: 16px 24px; background-color: #1ad151; color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; border-radius: 12px; box-shadow: 0 4px 14px #1ad15140; animation: pulseBtn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; text-decoration: none; box-sizing: border-box;">COMPRAR AGORA COM DESCONTO</a>
+
+          <!-- LINHA DIVISÓRIA INFERIOR (COMO NA IMAGEM) -->
+          <div style="height: 1px; background-color: #1a38d1; margin: 0 -16px 24px;"></div>
+
+          <!-- PREÇO INFERIOR (EXATAMENTE COMO NA FOTO) -->
+          <div style="margin-bottom: 20px; text-align: center;">
+            <div style="font-size: 18px; font-weight: 800; color: #ffffff; margin-bottom: 3px; letter-spacing: 0.3px;">
+              De <span style="text-decoration: line-through; opacity: 0.9;">R$279,99</span>
+            </div>
+            <div style="font-size: 18px; font-weight: 800; color: #ffffff; margin-bottom: 8px; letter-spacing: 0.3px;">
+              por apenas:
+            </div>
+            <div style="font-size: 52px; font-weight: 900; color: #1a38d1; line-height: 1; letter-spacing: -1px; text-shadow: 0 0 25px #1a38d150;">
+              R$19,90
+            </div>
+          </div>
+
+          <!-- BOTÃO DE COMPRA COM DESIGN ARREDONDADO (PILL) CONFORME FOTO -->
+          <a href="https://ggcheckout.app/checkout/v5/epjX5WE20awPE63T2BaE" target="_blank" rel="noopener noreferrer" class="checkout-btn" style="display: block; width: 100%; padding: 18px 24px; background-color: #1a38d1; color: #ffffff; font-size: 18px; font-weight: 900; text-align: center; border-radius: 50px; box-shadow: 0 4px 18px #1a38d155; animation: pulseBtn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; text-decoration: none; box-sizing: border-box; text-transform: uppercase; line-height: 1.25; letter-spacing: 0.5px;">COMPRAR AGORA COM DESCONTO</a>
+          
+          <div style="margin-top: 14px; text-align: center;">
+            <img src="https://i.ibb.co/WWBnkXPy/hwm5gk-FF1-Ts-L1i-GD70-LQOovw.png" alt="Formas de Pagamento e Compra Segura" width="280" height="36" style="width: 100%; max-width: 280px; height: auto; margin: 0 auto; display: block; opacity: 0.95;" loading="lazy" decoding="async" />
+          </div>
         </div>
         
         
         </div></div>
+        
         
         
         <!-- TWO PATHS / SCARCITY SECTION (ABAIXO DOS CARDS DE PREÇO) -->
@@ -1329,8 +1634,8 @@
             <div style="display: flex; flex-direction: column; gap: 16px;">
               
               <!-- Caminho 1 (Vermelho) -->
-              <div class="scroll-reveal" style="background-color: #000000; border: 2.5px solid #ef4444; border-radius: 20px; padding: 24px 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 15px rgba(239, 68, 68, 0.12); text-align: center;">
-                <div style="color: #ef4444; font-size: 26px; font-weight: 900; line-height: 1; margin-bottom: 12px;">
+              <div class="scroll-reveal" style="background-color: #000000; border: 2.5px solid #3a3fdf; border-radius: 20px; padding: 24px 20px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 15px rgba(239, 68, 68, 0.12); text-align: center;">
+                <div style="color: #3a3fdf; font-size: 26px; font-weight: 900; line-height: 1; margin-bottom: 12px;">
                   1.
                 </div>
                 <div style="color: #ffffff; font-size: 15.5px; font-weight: 600; line-height: 1.5; letter-spacing: 0.2px;">
@@ -1354,11 +1659,12 @@
         </div>
         
         
+        
         <!-- GUARANTEE SECTION -->
         
         <div class="section" style="position: relative; background-color: #000000; padding-top: 36px; padding-bottom: 36px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);">
           <div style="position: relative; z-index: 2; max-width: 540px; margin: 0 auto;">
-            <div class="scroll-reveal" style="background-color: #00140c; border: 2px solid #16df6d; padding: 24px 20px; border-radius: 16px; text-align: center; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);">
+            <div class="scroll-reveal" style="background-color: #00140c; border: 2px solid #163edf; padding: 24px 20px; border-radius: 16px; text-align: center; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);">
               
       <div style="margin: 0 auto 16px;">
         <img src="https://gmmoldes.com/wp-content/uploads/2022/06/7-DIAS.png" alt="Garantia" width="128" height="128" style="width: 128px; height: 128px; object-fit: contain; margin: 0 auto; display: block;" loading="lazy" decoding="async" onError="this.style.display='none'" />
@@ -1374,17 +1680,17 @@
       <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
         
         <div style="display: flex; align-items: center; gap: 8px;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16df6d" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#163edf" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
           <span style="font-size: 14px; color: #ffffff; font-weight: 500;">Reembolso total</span>
         </div>
   
         <div style="display: flex; align-items: center; gap: 8px;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16df6d" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#163edf" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
           <span style="font-size: 14px; color: #ffffff; font-weight: 500;">Sem perguntas</span>
         </div>
   
         <div style="display: flex; align-items: center; gap: 8px;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16df6d" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#163edf" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
           <span style="font-size: 14px; color: #ffffff; font-weight: 500;">Suporte incluso</span>
         </div>
   
@@ -1393,6 +1699,7 @@
             </div>
           </div>
         </div>
+        
         
         
         <!-- FAQ SECTION -->
@@ -1483,6 +1790,7 @@
         
       </div></div></div>
         
+        
         <!-- SOCIAL & FOOTER -->
         <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;">
         
@@ -1491,7 +1799,7 @@
   
   <div style="text-align: center;">
     
-      <img src="https://i.ibb.co/fV2mKbY7/image-pre-o.png" alt="Footer Logo" style="width: 130px; height: auto; border-radius: 0px; object-fit: contain; animation: fadeIn 0.6s ease-out;" loading="lazy" decoding="async" />
+      <img src="https://i.ibb.co/j9dNHMCD/6c056905-c6b2-4a4e-b601-dd7db35ebe7d.png" alt="Footer Logo" style="width: 130px; height: auto; border-radius: 0px; object-fit: contain; animation: fadeIn 0.6s ease-out;" loading="lazy" decoding="async" />
     
   </div>
   
@@ -1517,7 +1825,7 @@
 “Só o preço mudou! Acesse agora o combo de 10 painéis por apenas 19,00 vitalício!</p>
 
         <!-- Botão SIM / Aceitar Oferta -->
-        <a href="https://ggcheckout.app/checkout/v2/epjX5WE20awPE63T2BaE" style="display:block;width:100%;padding:16px 20px;background-color:#24db39;color:#ffffff;font-size:16px;font-weight:800;text-align:center;border-radius:12px;text-decoration:none;text-transform:uppercase;box-shadow:0 4px 15px rgba(34,197,94,0.4);margin-bottom:10px;transition:all 0.2s;">
+        <a href="https://ggcheckout.app/checkout/v2/epjX5WE20awPE63T2BaE" style="display:block;width:100%;padding:16px 20px;background-color:#916ef2;color:#ffffff;font-size:16px;font-weight:800;text-align:center;border-radius:12px;text-decoration:none;text-transform:uppercase;box-shadow:0 4px 15px rgba(34,197,94,0.4);margin-bottom:10px;transition:all 0.2s;">
           QUERO LIBERAR MEU ACESSO
         </a>
 
@@ -1738,31 +2046,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-          // Lazy load video iframe on first interaction or timeout to achieve 95+ PageSpeed Score
-          try {
-            var iframeLoaded = false;
-            function loadLazyIframe() {
-              if (iframeLoaded) return;
-              var iframe = document.querySelector('.lazy-iframe');
-              if (iframe && iframe.getAttribute('data-src')) {
-                iframe.src = iframe.getAttribute('data-src');
-                iframeLoaded = true;
-              }
-            }
-            // Load 1.5 seconds after DOM is ready
-            setTimeout(loadLazyIframe, 1500);
-            // Or load immediately on first user interaction
-            var interactionEvents = ['touchstart', 'scroll', 'mousedown', 'keydown'];
-            function triggerLoad() {
-              loadLazyIframe();
-              interactionEvents.forEach(function(ev) {
-                window.removeEventListener(ev, triggerLoad);
-              });
-            }
-            interactionEvents.forEach(function(ev) {
-              window.addEventListener(ev, triggerLoad, { passive: true });
-            });
-          } catch(e) { console.warn('Lazy iframe error:', e); }
 
           try {
             var dateEl = document.getElementById('urgency-date');
@@ -1815,6 +2098,93 @@
               }
             }
           } catch(e) { console.warn('Scroll reveal error:', e); }
+
+          // Target Card Dynamic Reveal & Scroll Observer
+          try {
+            var targetReveals = document.querySelectorAll('.target-card-reveal');
+            if (targetReveals && targetReveals.length) {
+              if ('IntersectionObserver' in window) {
+                var targetObs = new IntersectionObserver(function(entries) {
+                  entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('revealed');
+                    }
+                  });
+                }, { threshold: 0.15 });
+                targetReveals.forEach(function(el) { targetObs.observe(el); });
+              } else {
+                targetReveals.forEach(function(el) { el.classList.add('revealed'); });
+              }
+            }
+          } catch(e) { console.warn('Target reveal error:', e); }
+
+          // Target Image Parallax Effect on Scroll
+          
+          try {
+            var targetWrappers = document.querySelectorAll('.target-img-wrapper');
+            if (targetWrappers && targetWrappers.length && window.addEventListener) {
+              var tickingTarget = false;
+              window.addEventListener('scroll', function() {
+                if (!tickingTarget) {
+                  window.requestAnimationFrame(function() {
+                    targetWrappers.forEach(function(wrapper) {
+                      var rect = wrapper.getBoundingClientRect();
+                      var winH = window.innerHeight || 800;
+                      if (rect.top < winH && rect.bottom > 0) {
+                        var centerOffset = (rect.top + rect.height / 2 - winH / 2) / winH;
+                        var transY = Math.max(-14, Math.min(14, centerOffset * -16));
+                        wrapper.style.transform = 'translateY(' + transY.toFixed(1) + 'px)';
+                      }
+                    });
+                    tickingTarget = false;
+                  });
+                  tickingTarget = true;
+                }
+              }, { passive: true });
+            }
+          } catch(e) { console.warn('Target parallax error:', e); }
+          
+          // Phone 3D Entrance Spin & Float Observer
+          try {
+            var phoneMockup = document.getElementById('phone-3d-mockup');
+            if (phoneMockup) {
+              if ('IntersectionObserver' in window) {
+                var phoneObs = new IntersectionObserver(function(entries) {
+                  entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('phone-spin-active');
+                      phoneObs.unobserve(entry.target);
+                    }
+                  });
+                }, { threshold: 0.15 });
+                phoneObs.observe(phoneMockup);
+              } else {
+                phoneMockup.classList.add('phone-spin-active');
+              }
+            }
+          } catch(e) { console.warn('Phone spin observer error:', e); }
+
+          // Native lazy loading is supported by modern browsers for all img and iframe elements.
+          // Media Lazy Loader: Preload metadata for below-the-fold videos only when approaching viewport
+          try {
+            if ('IntersectionObserver' in window) {
+              var videoLazyObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                  if (entry.isIntersecting) {
+                    var vid = entry.target;
+                    if (vid.getAttribute('preload') === 'none') {
+                      vid.setAttribute('preload', 'metadata');
+                    }
+                    videoLazyObs.unobserve(vid);
+                  }
+                });
+              }, { rootMargin: '250px 0px' });
+
+              document.querySelectorAll('video[preload="none"]').forEach(function(vid) {
+                videoLazyObs.observe(vid);
+              });
+            }
+          } catch(e) { console.warn('Video lazy observer error:', e); }
         });
     </script>
 
