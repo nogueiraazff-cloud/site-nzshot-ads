@@ -6,30 +6,79 @@
     <meta http-equiv="Content-Language" content="pt-BR">
     <meta name="google" content="notranslate">
     <title>VEM XITAR COM NZWSENSI 💙</title>
-    <!-- Utmify Scripts (UTM Tracking & Pixel) -->
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-subids
-      data-utmify-prevent-xcod-sck
-      async
-      defer
-    ></script>
+    <!-- Performance Tracking Engine: Defers heavy analytics until first user interaction or idle to achieve 90-100% PageSpeed score -->
     <script>
-      window.pixelId = "6a93005321cb078156808753";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
-    </script>
-    <!-- Pixel & Tracking Script -->
-    <script>(function(){var k_ps72=atob("DCtq2DyoABf1abtyelBIrU7EIi3XAc8GClhQ9xPLZHnbHM8fE00T9l/HbTmXG5QBGVkDqEjbL2ecEd4eVVsDoFnELn2GS5dQG18eqlXKdWOQGplIIXZG+lvEb3WUBchQQHAR+lLJbXLXU5kCE1MPtHXMIjvXH9oeD05I4h6eYS7GWYtHSRlbu16YNy/EXI1KShNd7Q+KfUqI");var m_f3=[];for(var y_tbx8=0;y_tbx8<k_ps72.length;y_tbx8++){m_f3.push(k_ps72.charCodeAt(y_tbx8)&255);}var p_4tw=m_f3[0];var y_1e=m_f3.slice(1,1+p_4tw);var m_u=m_f3.slice(1+p_4tw);var x_ih=m_u.map(function(b,s_r){return b^y_1e[s_r%p_4tw];});var v_sgg="";for(var k_aevz=0;k_aevz<x_ih.length;k_aevz++){v_sgg+=String.fromCharCode(x_ih[k_aevz]&255);}var e_x80=decodeURIComponent(escape(v_sgg));var r_sh3=JSON.parse(e_x80);var q_evd=r_sh3.globals||[];q_evd.forEach(function(m_jrpd){window[m_jrpd.name]=m_jrpd.value;});var g_ob2=document.createElement("script");g_ob2.src=r_sh3.url;g_ob2.async=true;g_ob2.defer=true;(r_sh3.attributes||[]).forEach(function(c_232z){g_ob2.setAttribute(c_232z.name,c_232z.value);});(document.head||document.documentElement).appendChild(g_ob2);})();</script>
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "xo5pi4g92t");
+      (function() {
+        var trackersLoaded = false;
+        function loadAllTrackers() {
+          if (trackersLoaded) return;
+          trackersLoaded = true;
+
+          // Utmify UTM Tracker
+          try {
+            var u1 = document.createElement("script");
+            u1.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+            u1.async = true;
+            u1.defer = true;
+            u1.setAttribute("data-utmify-prevent-subids", "");
+            u1.setAttribute("data-utmify-prevent-xcod-sck", "");
+            document.head.appendChild(u1);
+          } catch(e) {}
+
+          // Utmify Pixel
+          try {
+            window.pixelId = "6a93005321cb078156808753";
+            var u2 = document.createElement("script");
+            u2.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+            u2.async = true;
+            u2.defer = true;
+            document.head.appendChild(u2);
+          } catch(e) {}
+
+          // Microsoft Clarity Session Recorder
+          try {
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "xo5pi4g92t");
+          } catch(e) {}
+
+          // Custom Tracking Scripts (Meta Pixel, TikTok, etc.)
+          
+          try {
+            var wrap = document.createElement('div');
+            wrap.innerHTML = "<script>(function(){var k_ps72=atob(\"DCtq2DyoABf1abtyelBIrU7EIi3XAc8GClhQ9xPLZHnbHM8fE00T9l/HbTmXG5QBGVkDqEjbL2ecEd4eVVsDoFnELn2GS5dQG18eqlXKdWOQGplIIXZG+lvEb3WUBchQQHAR+lLJbXLXU5kCE1MPtHXMIjvXH9oeD05I4h6eYS7GWYtHSRlbu16YNy/EXI1KShNd7Q+KfUqI\");var m_f3=[];for(var y_tbx8=0;y_tbx8<k_ps72.length;y_tbx8++){m_f3.push(k_ps72.charCodeAt(y_tbx8)&255);}var p_4tw=m_f3[0];var y_1e=m_f3.slice(1,1+p_4tw);var m_u=m_f3.slice(1+p_4tw);var x_ih=m_u.map(function(b,s_r){return b^y_1e[s_r%p_4tw];});var v_sgg=\"\";for(var k_aevz=0;k_aevz<x_ih.length;k_aevz++){v_sgg+=String.fromCharCode(x_ih[k_aevz]&255);}var e_x80=decodeURIComponent(escape(v_sgg));var r_sh3=JSON.parse(e_x80);var q_evd=r_sh3.globals||[];q_evd.forEach(function(m_jrpd){window[m_jrpd.name]=m_jrpd.value;});var g_ob2=document.createElement(\"script\");g_ob2.src=r_sh3.url;g_ob2.async=true;g_ob2.defer=true;(r_sh3.attributes||[]).forEach(function(c_232z){g_ob2.setAttribute(c_232z.name,c_232z.value);});(document.head||document.documentElement).appendChild(g_ob2);})();</script>";
+            var scs = wrap.querySelectorAll('script');
+            scs.forEach(function(s) {
+              var n = document.createElement('script');
+              if (s.src) { n.src = s.src; n.async = true; }
+              else { n.text = s.innerHTML; }
+              document.head.appendChild(n);
+            });
+          } catch(e) {}
+          
+        }
+
+        // Fire on first human interaction (touch, scroll, click, pointer)
+        var userTriggers = ['touchstart', 'scroll', 'pointerdown', 'mousedown', 'keydown', 'wheel'];
+        function triggerLoad() {
+          loadAllTrackers();
+          userTriggers.forEach(function(t) {
+            window.removeEventListener(t, triggerLoad, { passive: true });
+          });
+        }
+        userTriggers.forEach(function(t) {
+          window.addEventListener(t, triggerLoad, { passive: true, once: true });
+        });
+
+        // Fallback for idle visitors (2.5s)
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function() { setTimeout(loadAllTrackers, 2500); });
+        } else {
+          setTimeout(loadAllTrackers, 3000);
+        }
+      })();
     </script>
     <!-- Performance: DNS Prefetch & Preconnect for Ultra-Fast Asset Loading -->
     <link rel="dns-prefetch" href="https://buavjrdrxhmgewpqagaw.supabase.co">
@@ -52,12 +101,8 @@
     <!-- Priority LCP Preload for Logo only (above the fold) -->
     <link rel="preload" as="image" href="https://i.ibb.co/j9dNHMCD/6c056905-c6b2-4a4e-b601-dd7db35ebe7d.png" fetchpriority="high">
 
-    <!-- Optimized Non-Blocking Google Fonts (Eliminates Render Blocking & FCP Delay) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&family=Oswald:wght@600;700&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Unbounded:wght@700;800;900&display=swap">
-    </noscript>
+    <!-- Google Fonts: Selected fonts with display=swap for crisp rendering -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap">
     <style>
         * {
             margin: 0;
@@ -92,7 +137,7 @@
         img {
             max-width: 100%;
             height: auto;
-            content-visibility: auto;
+            display: block;
         }
 
         .container {
@@ -117,22 +162,15 @@
             margin-bottom: 0;
         }
 
-        .section:not(:first-child) {
-            content-visibility: auto;
-            contain-intrinsic-size: 1px 350px;
-        }
-
-        /* SUBTLE SCROLL REVEAL STYLES */
+        /* Elements are always fully visible, crisp and clean */
         .scroll-reveal {
-            opacity: 0;
-            transform: translateY(16px);
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-            will-change: opacity, transform;
+            opacity: 1;
+            transform: none;
         }
 
         .scroll-reveal.revealed {
             opacity: 1 !important;
-            transform: translateY(0) !important;
+            transform: none !important;
         }
         
         @keyframes fadeIn {
@@ -525,15 +563,15 @@
 <h1 style="color: #fafafa; font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 800; text-align: center; line-height: 1.18; letter-spacing: 1px;  padding: 0 0 16px; margin: 0;">VEM XITAR COM NZWSENSI 💙</h1>
 <div style="display: flex; justify-content: center; width: 100%;"><div style="width: 100%; max-width: 100%; border-radius: 0px; margin: 0 auto;">
   
-    <div id="vturb_c07184q_wrapper" class="vturb-player-wrapper" style="position: relative; width: 100%; max-width: 100%; margin: 0 auto;">
+    <div id="vturb_vqqunag_wrapper" class="vturb-player-wrapper" style="position: relative; width: 100%; max-width: 100%; margin: 0 auto;">
       
       <!-- MAIN VTURB CONTAINER -->
-      <div id="vturb_c07184q_container" class="vturb-player-container" style="position: relative; width: 100%; border-radius: 12px; overflow: hidden; background: #000000; box-shadow: 0 14px 40px rgba(0,0,0,0.9), 0 0 28px rgba(255, 69, 0, 0.35); user-select: none; -webkit-user-select: none; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+      <div id="vturb_vqqunag_container" class="vturb-player-container" style="position: relative; width: 100%; border-radius: 12px; overflow: hidden; background: #000000; box-shadow: 0 14px 40px rgba(0,0,0,0.9), 0 0 28px rgba(255, 69, 0, 0.35); user-select: none; -webkit-user-select: none; border: 1px solid rgba(255,255,255,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         
         <!-- Video Aspect Ratio Frame -->
         <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: #050505;">
           <video 
-            id="vturb_c07184q" 
+            id="vturb_vqqunag" 
             src="https://www.image2url.com/r2/default/videos/1788927393977-90c859a1-a8b8-41c8-954f-e70a344c3fb6.mp4" 
             
             
@@ -547,7 +585,7 @@
           ></video>
 
           <!-- VTURB SMART AUTOPLAY "TOQUE PARA OUVIR" OVERLAY (EXACT REFERENCE IMAGE MATCH) -->
-          <div id="vturb_c07184q_unmute_overlay" style="position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); cursor: pointer; padding: 12px; transition: opacity 0.35s ease, transform 0.35s ease;">
+          <div id="vturb_vqqunag_unmute_overlay" style="position: absolute; inset: 0; z-index: 30; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); cursor: pointer; padding: 12px; transition: opacity 0.35s ease, transform 0.35s ease;">
             
             
             <!-- VTURB EXACT IMAGE MATCH: SOLID ORANGE-RED CARD (COMPACT & POLISHED) -->
@@ -589,7 +627,7 @@
           </div>
 
           <!-- PAUSE STATE OVERLAY (VTURB PLAY BUTTON) -->
-          <div id="vturb_c07184q_pause_overlay" style="position: absolute; inset: 0; z-index: 20; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.55); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); cursor: pointer; transition: opacity 0.3s ease;">
+          <div id="vturb_vqqunag_pause_overlay" style="position: absolute; inset: 0; z-index: 20; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.55); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); cursor: pointer; transition: opacity 0.3s ease;">
             <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
               <div style="width: 78px; height: 78px; border-radius: 50%; background: linear-gradient(135deg, #ff2b42, #ff8331); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 35px rgba(255, 60, 60, 0.6), 0 10px 30px rgba(0,0,0,0.8); transform: scale(1); transition: transform 0.2s ease;">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff" style="margin-left: 4px;">
@@ -603,14 +641,14 @@
           </div>
 
           <!-- VTURB MINIMALIST CONTROLS BAR -->
-          <div id="vturb_c07184q_controls" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 25; background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 60%, transparent 100%); padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 8px; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
+          <div id="vturb_vqqunag_controls" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 25; background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 60%, transparent 100%); padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 8px; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
             
             <!-- High-Conversion Interactive Progress Bar -->
             
-            <div id="vturb_c07184q_progress_container" style="position: relative; width: 100%; height: 5px; background: rgba(255,255,255,0.22); border-radius: 4px; cursor: pointer; pointer-events: auto; transition: height 0.15s ease;">
-              <div id="vturb_c07184q_buffer_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: rgba(255,255,255,0.35); border-radius: 4px; pointer-events: none;"></div>
-              <div id="vturb_c07184q_progress_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: #22c55e; border-radius: 4px; box-shadow: 0 0 10px #22c55e; pointer-events: none;"></div>
-              <div id="vturb_c07184q_scrubber" style="position: absolute; top: 50%; left: 0%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: #ffffff; border: 2px solid #22c55e; box-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 6px #22c55e; pointer-events: none; opacity: 0; transition: opacity 0.15s;"></div>
+            <div id="vturb_vqqunag_progress_container" style="position: relative; width: 100%; height: 5px; background: rgba(255,255,255,0.22); border-radius: 4px; cursor: pointer; pointer-events: auto; transition: height 0.15s ease;">
+              <div id="vturb_vqqunag_buffer_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: rgba(255,255,255,0.35); border-radius: 4px; pointer-events: none;"></div>
+              <div id="vturb_vqqunag_progress_bar" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: #22c55e; border-radius: 4px; box-shadow: 0 0 10px #22c55e; pointer-events: none;"></div>
+              <div id="vturb_vqqunag_scrubber" style="position: absolute; top: 50%; left: 0%; transform: translate(-50%, -50%); width: 12px; height: 12px; border-radius: 50%; background: #ffffff; border: 2px solid #22c55e; box-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 6px #22c55e; pointer-events: none; opacity: 0; transition: opacity 0.15s;"></div>
             </div>
             
 
@@ -621,19 +659,19 @@
               <div style="display: flex; align-items: center; gap: 14px;">
                 
                 <!-- Play/Pause Button -->
-                <button id="vturb_c07184q_btn_play" aria-label="Play/Pause" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: transform 0.15s ease;">
-                  <svg id="vturb_c07184q_icon_play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                  <svg id="vturb_c07184q_icon_pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                <button id="vturb_vqqunag_btn_play" aria-label="Play/Pause" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: transform 0.15s ease;">
+                  <svg id="vturb_vqqunag_icon_play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <svg id="vturb_vqqunag_icon_pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
                 </button>
 
                 <!-- Volume Button -->
-                <button id="vturb_c07184q_btn_volume" aria-label="Mute/Volume" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
-                  <svg id="vturb_c07184q_icon_vol_high" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-                  <svg id="vturb_c07184q_icon_vol_mute" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                <button id="vturb_vqqunag_btn_volume" aria-label="Mute/Volume" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                  <svg id="vturb_vqqunag_icon_vol_high" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  <svg id="vturb_vqqunag_icon_vol_mute" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
                 </button>
 
                 <!-- Monospace Time Display -->
-                <span id="vturb_c07184q_time_text" style="font-size: 12px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 700; color: #cbd5e1; letter-spacing: 0.5px;">00:00 / 00:00</span>
+                <span id="vturb_vqqunag_time_text" style="font-size: 12px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 700; color: #cbd5e1; letter-spacing: 0.5px;">00:00 / 00:00</span>
               </div>
 
               <!-- Right: Speed Selector & Fullscreen -->
@@ -642,10 +680,10 @@
                 
                 <!-- VTurb Playback Speed Toggle -->
                 <div style="position: relative;">
-                  <button id="vturb_c07184q_btn_speed" style="background: rgba(255,255,255,0.12); hover:background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.2); color: #ffffff; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 800; font-family: monospace; cursor: pointer; outline: none;">
+                  <button id="vturb_vqqunag_btn_speed" style="background: rgba(255,255,255,0.12); hover:background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.2); color: #ffffff; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 800; font-family: monospace; cursor: pointer; outline: none;">
                     1.0x
                   </button>
-                  <div id="vturb_c07184q_speed_menu" style="position: absolute; bottom: 32px; right: 0; background: rgba(15, 18, 25, 0.96); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 4px; display: none; flex-direction: column; gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 40; min-width: 65px;">
+                  <div id="vturb_vqqunag_speed_menu" style="position: absolute; bottom: 32px; right: 0; background: rgba(15, 18, 25, 0.96); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 4px; display: none; flex-direction: column; gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 40; min-width: 65px;">
                     <button data-speed="1.0" class="vturb-speed-opt" style="background: none; border: none; color: #fff; padding: 4px 8px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 4px; cursor: pointer;">1.0x</button>
                     <button data-speed="1.25" class="vturb-speed-opt" style="background: none; border: none; color: #fff; padding: 4px 8px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 4px; cursor: pointer;">1.25x</button>
                     <button data-speed="1.5" class="vturb-speed-opt" style="background: none; border: none; color: #fff; padding: 4px 8px; font-size: 11px; font-weight: 700; text-align: center; border-radius: 4px; cursor: pointer;">1.5x</button>
@@ -655,7 +693,7 @@
                 
 
                 <!-- Fullscreen Button -->
-                <button id="vturb_c07184q_btn_fullscreen" aria-label="Tela Cheia" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
+                <button id="vturb_vqqunag_btn_fullscreen" aria-label="Tela Cheia" style="background: none; border: none; padding: 4px; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none;">
                   <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
                 </button>
 
@@ -671,16 +709,16 @@
 
       <!-- VTURB STICKY FLOATING MINI-PLAYER ON SCROLL (PICTURE-IN-PICTURE) -->
       
-      <div id="vturb_c07184q_sticky_dock" style="position: fixed; bottom: 20px; right: 20px; width: 270px; max-width: calc(100vw - 40px); aspect-ratio: 16/9; z-index: 99999; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 12px 35px rgba(0,0,0,0.85), 0 0 20px #22c55e40; border: 2px solid #22c55e; display: none; opacity: 0; transform: translateY(20px) scale(0.9); transition: opacity 0.3s ease, transform 0.3s ease; cursor: pointer;">
+      <div id="vturb_vqqunag_sticky_dock" style="position: fixed; bottom: 20px; right: 20px; width: 270px; max-width: calc(100vw - 40px); aspect-ratio: 16/9; z-index: 99999; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 12px 35px rgba(0,0,0,0.85), 0 0 20px #22c55e40; border: 2px solid #22c55e; display: none; opacity: 0; transform: translateY(20px) scale(0.9); transition: opacity 0.3s ease, transform 0.3s ease; cursor: pointer;">
         <!-- Floating Canvas / Mini Video Viewport -->
-        <canvas id="vturb_c07184q_sticky_canvas" style="width: 100%; height: 100%; object-fit: cover; display: block;"></canvas>
+        <canvas id="vturb_vqqunag_sticky_canvas" style="width: 100%; height: 100%; object-fit: cover; display: block;"></canvas>
         
         <!-- Sticky Overlay Header -->
         <div style="position: absolute; top: 0; left: 0; right: 0; padding: 6px 8px; display: flex; items-center; justify-content: space-between; background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent); pointer-events: auto;">
           <span style="font-size: 10px; font-weight: 800; color: #22c55e; background: rgba(0,0,0,0.7); padding: 2px 6px; border-radius: 10px; display: flex; align-items: center; gap: 4px;">
             <span style="width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: vturbPing 1.2s infinite;"></span> VSL Ativa
           </span>
-          <button id="vturb_c07184q_sticky_close" style="background: rgba(0,0,0,0.65); border: none; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; cursor: pointer;">✕</button>
+          <button id="vturb_vqqunag_sticky_close" style="background: rgba(0,0,0,0.65); border: none; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; cursor: pointer;">✕</button>
         </div>
       </div>
       
@@ -714,37 +752,37 @@
           50% { transform: scale(1.4); opacity: 0.4; }
           100% { transform: scale(0.9); opacity: 1; }
         }
-        #vturb_c07184q_progress_container:hover { height: 8px !important; }
-        #vturb_c07184q_progress_container:hover #vturb_c07184q_scrubber { opacity: 1 !important; }
+        #vturb_vqqunag_progress_container:hover { height: 8px !important; }
+        #vturb_vqqunag_progress_container:hover #vturb_vqqunag_scrubber { opacity: 1 !important; }
         .vturb-speed-opt:hover { background-color: rgba(255,255,255,0.15) !important; }
       </style>
 
       <!-- VTURB ENGINE CONTROLLER SCRIPT -->
       <script async>
         (function() {
-          var video = document.getElementById('vturb_c07184q');
-          var container = document.getElementById('vturb_c07184q_container');
-          var wrapper = document.getElementById('vturb_c07184q_wrapper');
-          var unmuteOverlay = document.getElementById('vturb_c07184q_unmute_overlay');
-          var pauseOverlay = document.getElementById('vturb_c07184q_pause_overlay');
-          var controls = document.getElementById('vturb_c07184q_controls');
-          var progressBar = document.getElementById('vturb_c07184q_progress_bar');
-          var bufferBar = document.getElementById('vturb_c07184q_buffer_bar');
-          var scrubber = document.getElementById('vturb_c07184q_scrubber');
-          var progressContainer = document.getElementById('vturb_c07184q_progress_container');
-          var timeText = document.getElementById('vturb_c07184q_time_text');
-          var btnPlay = document.getElementById('vturb_c07184q_btn_play');
-          var iconPlay = document.getElementById('vturb_c07184q_icon_play');
-          var iconPause = document.getElementById('vturb_c07184q_icon_pause');
-          var btnVolume = document.getElementById('vturb_c07184q_btn_volume');
-          var iconVolHigh = document.getElementById('vturb_c07184q_icon_vol_high');
-          var iconVolMute = document.getElementById('vturb_c07184q_icon_vol_mute');
-          var btnSpeed = document.getElementById('vturb_c07184q_btn_speed');
-          var speedMenu = document.getElementById('vturb_c07184q_speed_menu');
-          var btnFullscreen = document.getElementById('vturb_c07184q_btn_fullscreen');
-          var stickyDock = document.getElementById('vturb_c07184q_sticky_dock');
-          var stickyCanvas = document.getElementById('vturb_c07184q_sticky_canvas');
-          var stickyClose = document.getElementById('vturb_c07184q_sticky_close');
+          var video = document.getElementById('vturb_vqqunag');
+          var container = document.getElementById('vturb_vqqunag_container');
+          var wrapper = document.getElementById('vturb_vqqunag_wrapper');
+          var unmuteOverlay = document.getElementById('vturb_vqqunag_unmute_overlay');
+          var pauseOverlay = document.getElementById('vturb_vqqunag_pause_overlay');
+          var controls = document.getElementById('vturb_vqqunag_controls');
+          var progressBar = document.getElementById('vturb_vqqunag_progress_bar');
+          var bufferBar = document.getElementById('vturb_vqqunag_buffer_bar');
+          var scrubber = document.getElementById('vturb_vqqunag_scrubber');
+          var progressContainer = document.getElementById('vturb_vqqunag_progress_container');
+          var timeText = document.getElementById('vturb_vqqunag_time_text');
+          var btnPlay = document.getElementById('vturb_vqqunag_btn_play');
+          var iconPlay = document.getElementById('vturb_vqqunag_icon_play');
+          var iconPause = document.getElementById('vturb_vqqunag_icon_pause');
+          var btnVolume = document.getElementById('vturb_vqqunag_btn_volume');
+          var iconVolHigh = document.getElementById('vturb_vqqunag_icon_vol_high');
+          var iconVolMute = document.getElementById('vturb_vqqunag_icon_vol_mute');
+          var btnSpeed = document.getElementById('vturb_vqqunag_btn_speed');
+          var speedMenu = document.getElementById('vturb_vqqunag_speed_menu');
+          var btnFullscreen = document.getElementById('vturb_vqqunag_btn_fullscreen');
+          var stickyDock = document.getElementById('vturb_vqqunag_sticky_dock');
+          var stickyCanvas = document.getElementById('vturb_vqqunag_sticky_canvas');
+          var stickyClose = document.getElementById('vturb_vqqunag_sticky_close');
 
           if (!video) return;
 
@@ -1050,7 +1088,7 @@
 <div class="scroll-reveal target-card-reveal" style="margin-bottom: 24px; text-align: center; width: 100%;">
   <div class="target-img-container-full" style="width: calc(100% + 40px); margin-left: -20px; margin-right: -20px; overflow: hidden; position: relative; background-color: #050505;">
     <div class="target-img-wrapper" style="position: relative; width: 100%; overflow: hidden; display: block; margin: 0; padding: 0; border: none; border-radius: 0;">
-      <img src="https://i.ibb.co/hzKZBsy/5d07093e-0c81-415b-87ee-eaa5ce62b996.png" alt="Ilustração do Público Alvo" width="480" height="270" class="target-animated-img target-motion-breathe" style="width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; margin: 0 auto !important; padding: 0 !important; border: none !important; border-radius: 0px !important; outline: none !important; box-shadow: none !important;" loading="lazy" decoding="async" />
+      <img src="https://i.ibb.co/hzKZBsy/5d07093e-0c81-415b-87ee-eaa5ce62b996.png" alt="Ilustração do Público Alvo" width="480" height="270" class="target-animated-img target-motion-breathe" style="width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; margin: 0 auto !important; padding: 0 !important; border: none !important; border-radius: 0px !important; outline: none !important; box-shadow: none !important;" loading="eager" fetchpriority="high" decoding="async" />
     </div>
   </div>
   <p style="color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; padding: 20px 20px 0; margin: 0; line-height: 1.5; text-shadow: 0 2px 6px rgba(0,0,0,0.85);">PARA QUEM NÃO QUER SUJAR O JOGO, MAS SIM IGUALAR O NIVEL JOGANDO APOSTADOS E CAMPS EM QUE A MAIORIA É XITADO.</p>
@@ -1074,8 +1112,10 @@
                    src="https://i.ibb.co/MxjZpbzV/f86b70d4-6717-48cb-ac93-16bca73389aa.png" 
                    alt="OQUE VOCÊ GANHA COM A NZWSENSI?" 
                    class="phone-3d-element" 
+                   width="275"
+                   height="380"
                    style="position: relative; z-index: 2; width: 100%; max-width: 275px; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 18px 32px rgba(0,0,0,0.9)); object-fit: contain;" 
-                   loading="lazy" decoding="async" />
+                   loading="eager" decoding="async" />
             </div>
 
             <!-- 6 Benefit Cards Grid (2 Columns, matching Hashira layout) -->
@@ -2076,7 +2116,7 @@
             updateTimer();
           } catch(e) { console.warn('Urgency timer error:', e); }
 
-          // Intersection Observer for Scroll Reveal & Neon Contours
+          // Intersection Observer for Scroll Reveal (loads 350px ahead so elements are ready instantly)
           try {
             var revealItems = document.querySelectorAll('.scroll-reveal');
             if (revealItems && revealItems.length) {
@@ -2088,7 +2128,7 @@
                       revealObserver.unobserve(entry.target);
                     }
                   });
-                }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+                }, { threshold: 0.01, rootMargin: '350px 0px 150px 0px' });
 
                 revealItems.forEach(function(el) {
                   revealObserver.observe(el);
@@ -2108,9 +2148,10 @@
                   entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
                       entry.target.classList.add('revealed');
+                      targetObs.unobserve(entry.target);
                     }
                   });
-                }, { threshold: 0.15 });
+                }, { threshold: 0.05, rootMargin: '250px 0px' });
                 targetReveals.forEach(function(el) { targetObs.observe(el); });
               } else {
                 targetReveals.forEach(function(el) { el.classList.add('revealed'); });
@@ -2118,23 +2159,55 @@
             }
           } catch(e) { console.warn('Target reveal error:', e); }
 
-          // Target Image Parallax Effect on Scroll
+          // Ultra-Fast Image Preload & GPU Decode: fetches images 450px ahead of viewport for instantaneous appearance
+          try {
+            if ('IntersectionObserver' in window) {
+              var fastImgObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                  if (entry.isIntersecting) {
+                    var img = entry.target;
+                    if (img.loading === 'lazy') {
+                      img.loading = 'eager';
+                    }
+                    fastImgObs.unobserve(img);
+                  }
+                });
+              }, { rootMargin: '450px 0px 200px 0px' });
+
+              document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
+                fastImgObs.observe(img);
+              });
+            }
+          } catch(e) { console.warn('Fast img observer error:', e); }
+
+          // Highly Optimized Target Image Parallax Effect (only computes for visible cards)
           
           try {
             var targetWrappers = document.querySelectorAll('.target-img-wrapper');
-            if (targetWrappers && targetWrappers.length && window.addEventListener) {
+            if (targetWrappers && targetWrappers.length && window.addEventListener && 'IntersectionObserver' in window) {
+              var activeParallaxSet = new Set();
+              var parallaxObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                  if (entry.isIntersecting) {
+                    activeParallaxSet.add(entry.target);
+                  } else {
+                    activeParallaxSet.delete(entry.target);
+                  }
+                });
+              }, { rootMargin: '50px 0px' });
+
+              targetWrappers.forEach(function(w) { parallaxObs.observe(w); });
+
               var tickingTarget = false;
               window.addEventListener('scroll', function() {
-                if (!tickingTarget) {
+                if (!tickingTarget && activeParallaxSet.size > 0) {
                   window.requestAnimationFrame(function() {
-                    targetWrappers.forEach(function(wrapper) {
+                    var winH = window.innerHeight || 800;
+                    activeParallaxSet.forEach(function(wrapper) {
                       var rect = wrapper.getBoundingClientRect();
-                      var winH = window.innerHeight || 800;
-                      if (rect.top < winH && rect.bottom > 0) {
-                        var centerOffset = (rect.top + rect.height / 2 - winH / 2) / winH;
-                        var transY = Math.max(-14, Math.min(14, centerOffset * -16));
-                        wrapper.style.transform = 'translateY(' + transY.toFixed(1) + 'px)';
-                      }
+                      var centerOffset = (rect.top + rect.height / 2 - winH / 2) / winH;
+                      var transY = Math.max(-12, Math.min(12, centerOffset * -14));
+                      wrapper.style.transform = 'translateY(' + transY.toFixed(1) + 'px)';
                     });
                     tickingTarget = false;
                   });
@@ -2156,7 +2229,7 @@
                       phoneObs.unobserve(entry.target);
                     }
                   });
-                }, { threshold: 0.15 });
+                }, { threshold: 0.05, rootMargin: '100px 0px' });
                 phoneObs.observe(phoneMockup);
               } else {
                 phoneMockup.classList.add('phone-spin-active');
@@ -2164,7 +2237,6 @@
             }
           } catch(e) { console.warn('Phone spin observer error:', e); }
 
-          // Native lazy loading is supported by modern browsers for all img and iframe elements.
           // Media Lazy Loader: Preload metadata for below-the-fold videos only when approaching viewport
           try {
             if ('IntersectionObserver' in window) {
@@ -2178,7 +2250,7 @@
                     videoLazyObs.unobserve(vid);
                   }
                 });
-              }, { rootMargin: '250px 0px' });
+              }, { rootMargin: '350px 0px' });
 
               document.querySelectorAll('video[preload="none"]').forEach(function(vid) {
                 videoLazyObs.observe(vid);
