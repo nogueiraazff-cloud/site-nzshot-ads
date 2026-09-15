@@ -1,0 +1,6 @@
+{
+  "name": "NZWSENSI",
+  "description": "VEM XITAR COM NZWSENSI 💙 - Painel de sensibilidade para Free Fire",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
